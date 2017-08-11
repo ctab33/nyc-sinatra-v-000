@@ -1,0 +1,14 @@
+
+  <h3>Name</h3>
+  <h6>Year Completed<h6>
+  <ol>
+    <% @landmarks.each do |landmark| %>
+      <a href="/landmarks/<%= landmark.id %>"><%= landmark.name %></a><br>
+
+      <%= landmark.year_completed %><br><br>
+      <% end %>
+  </ol>
+
+
+<a class="button" href="landmarks/new">New LANDMARK HERE</a>
+<a class="button" href="/figures">View Figures</a>
